@@ -1,0 +1,1 @@
+select firstname || " "||lastname as NAME, invoiceid, invoicedate, billingaddress from chinook_sqlite.Customer, chinook_sqlite.Invoice where chinook_sqlite.Customer.customerid=chinook_sqlite.Invoice.customerid and chinook_sqlite.Customer.country = "Brazil";

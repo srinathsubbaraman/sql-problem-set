@@ -1,0 +1,1 @@
+select invoiceid,invoicedate,billingaddress,billingcity,billingstate,billingcountry,billingpostalcode,total,employee.firstname || " "||employee.lastname as NAME from ((invoice inner join customer on invoice.customerid=customer.customerid) inner join employee on employee.employeeid=customer.supportrepid)where employee.title like "Sales%Agent" ;

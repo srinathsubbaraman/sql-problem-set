@@ -1,0 +1,1 @@
+select * from chinook_sqlite.Customer where country = "Brazil";

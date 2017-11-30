@@ -1,0 +1,1 @@
+select count(*) from Invoice where invoicedate like "%2011%" or invoicedate like "%2009%";

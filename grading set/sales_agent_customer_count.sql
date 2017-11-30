@@ -1,0 +1,1 @@
+select count(customerid),Employee.firstname from Customer ,Employee  where Employee.employeeid=Customer.supportrepid  group by Employee.employeeid having Employee.title='Sales Support Agent';

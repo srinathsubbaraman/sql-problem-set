@@ -1,0 +1,1 @@
+select count(trackid),playlistid,name from chinook_sqlite.PlaylistTrack, chinook_sqlite.Playlist where chinook_sqlite.PlaylistTrack.playlistid=chinook_sqlite.Playlist.playlistid group by chinook_sqlite.PlaylistTrack.playlistid;

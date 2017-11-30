@@ -1,0 +1,1 @@
+select MediaType.name from MediaType, InvoiceLine , Track  where InvoiceLine.trackid = Track.trackid and Track.mediatypeid = MediaType.mediatypeid group by MediaType.name order by InvoiceLine.trackid desc;

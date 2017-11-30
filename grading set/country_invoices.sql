@@ -1,0 +1,1 @@
+select *,count(*) from chinook_sqlite.Invoice  group by chinook_sqlite.Invoice.billincountry;

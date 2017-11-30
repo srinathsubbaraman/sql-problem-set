@@ -1,0 +1,2 @@
+select a.name, count(InvoiceLine.trackid) from Artist , InvoiceLine , Track , Album  where InvoiceLine.trackid = Track.trackid and Track.albumid = Album.albumid and Album.artistid = Artist.artistid
+group by Artist.name order by count(InvoiceLine.trackid) desc limit 3;

@@ -1,0 +1,1 @@
+select invoiceid,count(invoiceid) from chinook_sqlite.InvoiceLine group by invoiceid;
